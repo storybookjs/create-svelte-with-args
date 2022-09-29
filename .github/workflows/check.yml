@@ -60,7 +60,7 @@ jobs:
   #       run: yarn test
 
   build:
-    name: Build and check dist
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
