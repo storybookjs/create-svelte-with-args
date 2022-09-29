@@ -1,0 +1,14 @@
+name: 'Prepare Dependencies'
+description: 'Prepares all Node and Yarn dependencies'
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'
+        cache: 'yarn'
+
+    - name: Install dependencies
+      shell: bash
+      run: yarn install --frozen-lockfile

@@ -24,7 +24,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "type-check": "tsc --noEmit",
-    "check-all": "yarn format:check && yarn type-check && yarn build"
+    "check-all": "yarn format:check && yarn type-check && yarn build",
+    "release": "auto shipit"
   },
   "files": [
     "dist"
@@ -43,6 +44,7 @@
     "@tsconfig/node14": "^1.0.3",
     "@types/node": "^18.7.23",
     "@types/yargs": "^17.0.13",
+    "auto": "^10.37.6",
     "np": "^7.6.2",
     "prettier": "^2.7.1",
     "tsup": "^6.2.3",
@@ -51,5 +53,11 @@
   "np": {
     "branch": "main"
   },
-  "prettier": "@storybook/linter-config/prettier.config.js"
+  "prettier": "@storybook/linter-config/prettier.config.js",
+  "auto": {
+    "plugins": [
+      "npm",
+      "released"
+    ]
+  }
 }
