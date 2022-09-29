@@ -38,9 +38,8 @@ const main = async () => {
       },
       types: {
         alias: 'y',
-        type: 'string',
         description: 'How types will be written',
-        choices: ['checkjs', 'typescript', 'null'] as const,
+        choices: ['checkjs', 'typescript', null] as any,
         demandOption: true,
         coerce: (value: string) => (value === 'null' ? null : value),
       },
@@ -83,7 +82,7 @@ Will call create-svelte with the following arguments:
   create('${argv.directory}', {
     name: '${argv.name}',
     template: '${argv.template}',
-    types: '${argv.types}',
+    types: ${argv.types ? `'${argv.types}'` : argv.types},
     prettier: ${argv.prettier},
     eslint: ${argv.eslint},
     playwright: ${argv.playwright},
@@ -103,4 +102,7 @@ Will call create-svelte with the following arguments:
   console.log(`Done. Succesfully created a new Svelte project in ./${argv.directory}`);
 };
 
-main();
+main().catch((error) => {
+  console.error('An unexpected error occurred:', error);
+  process.exit(1);
+});
