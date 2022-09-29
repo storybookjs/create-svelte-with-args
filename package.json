@@ -1,0 +1,39 @@
+{
+  "name": "create-svelte-with-args",
+  "version": "0.0.1",
+  "description": "A small CLI wrapper around the create-svelte package that enables you to replace the interactive prompts with CLI arguments.",
+  "bin": "dist/bin.js",
+  "repository": "git@github.com:storybookjs/create-svelte-with-args.git",
+  "author": "Jeppe Reinhold <jeppe@chromatic.com>",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "prestart": "yarn build",
+    "start": "node ./dist/bin.js",
+    "format": "prettier --write .",
+    "type-check": "tsc --noEmit"
+  },
+  "packageManager": "yarn@3.2.1",
+  "engines": {
+    "node": ">=10.13.0",
+    "yarn": ">=1.3.2"
+  },
+  "dependencies": {
+    "create-svelte": "^2.0.0-next.180"
+  },
+  "devDependencies": {
+    "@storybook/linter-config": "^3.1.2",
+    "@tsconfig/node14": "^1.0.3",
+    "@types/node": "^18.7.23",
+    "prettier": "^2.7.1",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.4",
+    "yargs": "^17.5.1"
+  },
+  "prettier": "@storybook/linter-config/prettier.config.js",
+  "eslintConfig": {
+    "extends": "@storybook/eslint-config-storybook"
+  }
+}
