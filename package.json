@@ -5,6 +5,11 @@
   "bin": "dist/bin.js",
   "repository": "git@github.com:storybookjs/create-svelte-with-args.git",
   "author": "Jeppe Reinhold <jeppe@chromatic.com>",
+  "keywords": [
+    "svelte",
+    "create-svelte",
+    "cli"
+  ],
   "license": "MIT",
   "private": false,
   "type": "module",
