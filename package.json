@@ -1,6 +1,6 @@
 {
   "name": "create-svelte-with-args",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "A small CLI wrapper around the create-svelte package that enables you to replace the interactive prompts with CLI arguments.",
   "bin": "dist/bin.js",
   "repository": "git@github.com:storybookjs/create-svelte-with-args.git",
@@ -15,7 +15,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "type-check": "tsc --noEmit",
-    "check-all": "yarn format:check && yarn type-check && yarn build"
+    "test": "echo no tests exists",
+    "check-all": "yarn format:check && yarn type-check && yarn test && yarn build",
+    "prepublishOnly": "yarn build"
   },
   "files": [
     "dist"
@@ -34,9 +36,13 @@
     "@tsconfig/node14": "^1.0.3",
     "@types/node": "^18.7.23",
     "@types/yargs": "^17.0.13",
+    "np": "^7.6.2",
     "prettier": "^2.7.1",
     "tsup": "^6.2.3",
     "typescript": "^4.8.4"
+  },
+  "np": {
+    "branch": "main"
   },
   "prettier": "@storybook/linter-config/prettier.config.js"
 }
