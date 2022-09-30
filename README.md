@@ -7,8 +7,7 @@
 > The Svelte team has been very explicit about not adding CLI arguments to `create-svelte` for good reasons.
 > See https://github.com/sveltejs/kit/pull/6117#issuecomment-1221323822
 
-badges
-dependabot for a single dependency?
+![upstream create-svelte version](https://img.shields.io/badge/upstream_create--svelte-2.0.0--next.180-brightgreen)
 
 `create-svelte-with-args` is a simple wrapper around the [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte) package that allows you to specify the options as CLI arguments instead of using the interactive prompts.
 
