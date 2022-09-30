@@ -5,6 +5,7 @@
 > If you experience any issues with it you should file them in this repository and not in the official SvelteKit repository.
 >
 > The Svelte team has been very explicit about not adding CLI arguments to `create-svelte` for good reasons.
+> See https://github.com/sveltejs/kit/pull/6117#issuecomment-1221323822
 
 badges
 dependabot for a single dependency?
