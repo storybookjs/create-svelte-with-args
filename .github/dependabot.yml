@@ -1,0 +1,13 @@
+# this configuration tells dependabot to only focus on the
+# upstream "create-svelte" package and ignore anything else
+
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+    allow:
+      - dependency-name: 'create-svelte'
+    assignees:
+      - 'jreinhold'
