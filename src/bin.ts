@@ -61,6 +61,12 @@ const main = async () => {
         description: 'Whether playwright should be included',
         demandOption: true,
       },
+      vitest: {
+        alias: 'v',
+        type: 'boolean',
+        description: 'Whether vitest should be included',
+        demandOption: true,
+      },
       dry: {
         type: 'boolean',
         description: 'Whether to run in dry run mode, not creating any files',
@@ -86,6 +92,7 @@ Will call create-svelte with the following arguments:
     prettier: ${argv.prettier},
     eslint: ${argv.eslint},
     playwright: ${argv.playwright},
+    vitest: ${argv.vitest},
   });`);
     return;
   }
@@ -97,6 +104,7 @@ Will call create-svelte with the following arguments:
     prettier: argv.prettier,
     eslint: argv.eslint,
     playwright: argv.playwright,
+    vitest: argv.vitest,
   });
 
   console.log(`Done. Succesfully created a new Svelte project in ./${argv.directory}`);
