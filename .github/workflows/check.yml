@@ -60,7 +60,7 @@ jobs:
         run: yarn build
 
   smoke-test:
-    name: Run bin to create example projects
+    name: Smoke test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
