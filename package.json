@@ -16,9 +16,9 @@
     "build": "tsup",
     "prestart": "yarn build",
     "start": "node ./dist/bin.js",
-    "start:default": "yarn start --name=default --template=default --types=checkjs --no-prettier --no-eslint --no-playwright",
-    "start:mini": "yarn start --name=mini --template=skeleton --types=null --no-prettier --no-eslint --no-playwright",
-    "start:maxi": "yarn start --name=maxi --template=default --types=typescript --prettier --eslint --playwright",
+    "start:default": "yarn start --name=default --template=default --types=checkjs --no-prettier --no-eslint --no-playwright --no-vitest",
+    "start:mini": "yarn start --name=mini --template=skeleton --types=null --no-prettier --no-eslint --no-playwright --no-vitest",
+    "start:maxi": "yarn start --name=maxi --template=default --types=typescript --prettier --eslint --playwright --vitest",
     "start:dry": "yarn start:default --dry",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -35,7 +35,7 @@
     "yarn": ">=1.3.2"
   },
   "dependencies": {
-    "create-svelte": "^2.0.0-next.180",
+    "create-svelte": "2.0.0-next.198",
     "yargs": "^17.5.1"
   },
   "devDependencies": {
