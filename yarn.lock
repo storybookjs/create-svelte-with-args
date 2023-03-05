@@ -168,6 +168,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@clack/core@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@clack/core@npm:0.3.0"
+  dependencies:
+    picocolors: ^1.0.0
+    sisteransi: ^1.0.5
+  checksum: 8b68f8814708c41514e66725bff6ee68951bae100d0fd28b236408ccf6b20feecf76c86f4028a7690292c87706f92c13ef7907488355696340ff343b6221b6d8
+  languageName: node
+  linkType: hard
+
+"@clack/prompts@npm:^0.6.0":
+  version: 0.6.1
+  resolution: "@clack/prompts@npm:0.6.1"
+  dependencies:
+    "@clack/core": ^0.3.0
+    is-unicode-supported: "*"
+    picocolors: ^1.0.0
+    sisteransi: ^1.0.5
+  checksum: 69982f4c06e2b39b1bdbcfb349e21a034844c6dc0780382c6bc0bdef2fbf0efdc01c73637e02cfc11fe8d50272f10eccc92a35baa6773f74d22f856537f3c989
+  languageName: node
+  linkType: hard
+
 "@cspotcode/source-map-support@npm:^0.8.0":
   version: 0.8.1
   resolution: "@cspotcode/source-map-support@npm:0.8.1"
@@ -1401,7 +1423,7 @@ __metadata:
     "@types/node": ^18.7.23
     "@types/yargs": ^17.0.13
     auto: ^10.37.6
-    create-svelte: 3.0.3
+    create-svelte: 3.1.0
     prettier: ^2.7.1
     tsup: ^6.2.3
     typescript: ^4.8.4
@@ -1411,15 +1433,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"create-svelte@npm:3.0.3":
-  version: 3.0.3
-  resolution: "create-svelte@npm:3.0.3"
+"create-svelte@npm:3.1.0":
+  version: 3.1.0
+  resolution: "create-svelte@npm:3.1.0"
   dependencies:
+    "@clack/prompts": ^0.6.0
     kleur: ^4.1.5
-    prompts: ^2.4.2
   bin:
     create-svelte: bin.js
-  checksum: 08771cfc5e68666f3028e4aff77f808117fc7529417a6cd6d3efaae0f156e0b70ef437197862925748f89f5afa324ebde441ee981a73cffbfc56b9bc80833418
+  checksum: 3e8331012c7f456564c4adf5f659166333ab3ae62add5dbe6cba53e5abcf61f18d1399e213419514126e3e408cd7f0fa9d5b503641f4c8a40c92918826f05566
   languageName: node
   linkType: hard
 
@@ -3156,6 +3178,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-unicode-supported@npm:*":
+  version: 1.3.0
+  resolution: "is-unicode-supported@npm:1.3.0"
+  checksum: 20a1fc161afafaf49243551a5ac33b6c4cf0bbcce369fcd8f2951fbdd000c30698ce320de3ee6830497310a8f41880f8066d440aa3eb0a853e2aa4836dd89abc
+  languageName: node
+  linkType: hard
+
 "is-unicode-supported@npm:^0.1.0":
   version: 0.1.0
   resolution: "is-unicode-supported@npm:0.1.0"
@@ -3267,13 +3296,6 @@ __metadata:
     array-includes: ^3.1.5
     object.assign: ^4.1.3
   checksum: a2ed78cac49a0f0c4be8b1eafe3c5257a1411341d8e7f1ac740debae003de04e5f6372bfcfbd9d082e954ffd99aac85bcda85b7c6bc11609992483f4cdc0f745
-  languageName: node
-  linkType: hard
-
-"kleur@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "kleur@npm:3.0.3"
-  checksum: df82cd1e172f957bae9c536286265a5cdbd5eeca487cb0a3b2a7b41ef959fc61f8e7c0e9aeea9c114ccf2c166b6a8dd45a46fd619c1c569d210ecd2765ad5169
   languageName: node
   linkType: hard
 
@@ -4105,6 +4127,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"picocolors@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "picocolors@npm:1.0.0"
+  checksum: a2e8092dd86c8396bdba9f2b5481032848525b3dc295ce9b57896f931e63fc16f79805144321f72976383fc249584672a75cc18d6777c6b757603f372f745981
+  languageName: node
+  linkType: hard
+
 "picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.3.1":
   version: 2.3.1
   resolution: "picomatch@npm:2.3.1"
@@ -4202,16 +4231,6 @@ __metadata:
     err-code: ^2.0.2
     retry: ^0.12.0
   checksum: f96a3f6d90b92b568a26f71e966cbbc0f63ab85ea6ff6c81284dc869b41510e6cdef99b6b65f9030f0db422bf7c96652a3fff9f2e8fb4a0f069d8f4430359429
-  languageName: node
-  linkType: hard
-
-"prompts@npm:^2.4.2":
-  version: 2.4.2
-  resolution: "prompts@npm:2.4.2"
-  dependencies:
-    kleur: ^3.0.3
-    sisteransi: ^1.0.5
-  checksum: d8fd1fe63820be2412c13bfc5d0a01909acc1f0367e32396962e737cb2fc52d004f3302475d5ce7d18a1e8a79985f93ff04ee03007d091029c3f9104bffc007d
   languageName: node
   linkType: hard
 
