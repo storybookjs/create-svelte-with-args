@@ -1,6 +1,6 @@
 {
   "name": "create-svelte-with-args",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "A small CLI wrapper around the create-svelte package that enables you to replace the interactive prompts with CLI arguments.",
   "bin": "dist/bin.js",
   "repository": "git@github.com:storybookjs/create-svelte-with-args.git",
