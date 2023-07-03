@@ -1,3 +1,15 @@
+# v4.0.1 (Mon Jul 03 2023)
+
+#### 🐛 Bug Fix
+
+- Include `--vitest` in docs and examples [#34](https://github.com/storybookjs/create-svelte-with-args/pull/34) ([@JReinhold](https://github.com/JReinhold))
+
+#### Authors: 1
+
+- Jeppe Reinhold ([@JReinhold](https://github.com/JReinhold))
+
+---
+
 # v4.0.0 (Mon Jul 03 2023)
 
 #### 💥 Breaking Change
