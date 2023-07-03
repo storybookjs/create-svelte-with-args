@@ -35,6 +35,7 @@ The arguments match one to one with the upstream [programmatic `create-svelte` p
 | `--prettier`, `-p`   | Whether prettier should be included                                             | `boolean`                                         | `--prettier` or `--no-prettier`     |
 | `--eslint`, `-e`     | Whether eslint should be included                                               | `boolean`                                         | `--eslint` or `--no-eslint`         |
 | `--playwright`, `-l` | Whether playwright should be included                                           | `boolean`                                         | `--playwright` or `--no-playwright` |
+| `--vitest`, `-v`     | Whether vitest should be included                                               | `boolean`                                         | `--vitest` or `--no-vitest`         |
 
 ### Examples
 
@@ -68,20 +69,21 @@ Options:
   -p, --prettier    Whether prettier should be included     [boolean] [required]
   -e, --eslint      Whether eslint should be included       [boolean] [required]
   -l, --playwright  Whether playwright should be included   [boolean] [required]
+  -v, --vitest      Whether vitest should be included       [boolean] [required]
       --dry         Whether to run in dry run mode, not creating any files
                                                       [boolean] [default: false]
 
 Examples:
-  npx create-svelte-with-args               Default app, checking JS types, with
-  --name=my-new-app --template=default      Prettier, and no ESLint or
-  --types=checkjs --prettier --no-eslint    Playwright
-  --no-playwright
-  npx create-svelte-with-args               Default app, installing in specified
+  npm create svelte-with-args@latest        Default app, checking JS types, with
+  --name=my-new-app --template=default      Prettier, and no ESLint, Playwright
+  --types=checkjs --prettier --no-eslint    or Vitest
+  --no-playwright --no-vitest
+  npm create svelte-with-args@latest        Default app, installing in specified
   --name=my-new-app                         directory
   --directory=other-dir/my-app
   --template=default --types=typescript
   --no-prettier --no-eslint
-  --no-playwright
+  --no-playwright --no-vitest
 
 For more information, see https://github.com/storybookjs/create-svelte-with-args
 ```

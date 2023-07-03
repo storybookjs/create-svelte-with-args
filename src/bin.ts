@@ -9,11 +9,11 @@ const main = async () => {
     .epilog('For more information, see https://github.com/storybookjs/create-svelte-with-args')
     .example([
       [
-        'npm create svelte-with-args@latest --name=my-new-app --template=default --types=checkjs --prettier --no-eslint --no-playwright',
-        'Default app, checking JS types, with Prettier, and no ESLint or Playwright',
+        'npm create svelte-with-args@latest --name=my-new-app --template=default --types=checkjs --prettier --no-eslint --no-playwright --no-vitest',
+        'Default app, checking JS types, with Prettier, and no ESLint, Playwright or Vitest',
       ],
       [
-        'npm create svelte-with-args@latest --name=my-new-app --directory=other-dir/my-app --template=default --types=typescript --no-prettier --no-eslint --no-playwright',
+        'npm create svelte-with-args@latest --name=my-new-app --directory=other-dir/my-app --template=default --types=typescript --no-prettier --no-eslint --no-playwright --no-vitest',
         'Default app, installing in specified directory',
       ],
     ])
