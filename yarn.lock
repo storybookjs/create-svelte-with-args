@@ -168,25 +168,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@clack/core@npm:^0.3.2":
-  version: 0.3.2
-  resolution: "@clack/core@npm:0.3.2"
+"@clack/core@npm:^0.3.3":
+  version: 0.3.3
+  resolution: "@clack/core@npm:0.3.3"
   dependencies:
     picocolors: ^1.0.0
     sisteransi: ^1.0.5
-  checksum: a4b6708d47b9df9d2899f5ec60e34b4ae7831e951da136dadb690ccc8d21ba5c8465e24fb6d9c2c510ef388774d509dcf44f3d5ff9a1c28b9474a541ac07efce
+  checksum: 3f04afc39194340c83d07deccd57f8c5e1fec43cde10fb3ceb2af4d8738fbaf9b33f4d37f64d66615265c8c1f61d1ad367aac7337695d63a536e1cd20215e49c
   languageName: node
   linkType: hard
 
-"@clack/prompts@npm:^0.6.3":
-  version: 0.6.3
-  resolution: "@clack/prompts@npm:0.6.3"
+"@clack/prompts@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@clack/prompts@npm:0.7.0"
   dependencies:
-    "@clack/core": ^0.3.2
+    "@clack/core": ^0.3.3
     is-unicode-supported: "*"
     picocolors: ^1.0.0
     sisteransi: ^1.0.5
-  checksum: 6943e46b4c37c62ca7734459f68b60f819db0c3da6dfdfacfadbf8f4abefc22b177884469c6f2b6a2906ac2d03baff59b72fc9c0802f34255e29ab541111e6d9
+  checksum: 3daa5262807f215416c19312083e00521cbe70b0dff67b2ff07f4fe0ac7546a7b2f2b7de773cf630d9413b119eb73150d58d76ee1c445ce4bb67be580be7591a
   languageName: node
   linkType: hard
 
@@ -1423,7 +1423,7 @@ __metadata:
     "@types/node": ^18.7.23
     "@types/yargs": ^17.0.13
     auto: ^10.37.6
-    create-svelte: 5.0.4
+    create-svelte: 5.0.5
     prettier: ^2.7.1
     tsup: ^6.2.3
     typescript: ^4.8.4
@@ -1433,15 +1433,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"create-svelte@npm:5.0.4":
-  version: 5.0.4
-  resolution: "create-svelte@npm:5.0.4"
+"create-svelte@npm:5.0.5":
+  version: 5.0.5
+  resolution: "create-svelte@npm:5.0.5"
   dependencies:
-    "@clack/prompts": ^0.6.3
+    "@clack/prompts": ^0.7.0
     kleur: ^4.1.5
   bin:
     create-svelte: bin.js
-  checksum: ab9863a0b5f0428b0b820934324a47edacf4891c68034a1795658f23223c6d105a47323b8e90256bdf5bca6fdf515f16f393262edae46d5d76636936d94ab135
+  checksum: 9bec41f4eac99cf381ab532391c2df01b04908d061b97d6e76b78d80eed5db1bc0b0974920f191c0dd241f4cace811844c9a05dfacfcc3d2cc077921d92184d7
   languageName: node
   linkType: hard
 
