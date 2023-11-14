@@ -1423,7 +1423,7 @@ __metadata:
     "@types/node": ^18.7.23
     "@types/yargs": ^17.0.13
     auto: ^10.37.6
-    create-svelte: 5.1.1
+    create-svelte: 5.3.0
     prettier: ^2.7.1
     tsup: ^6.2.3
     typescript: ^4.8.4
@@ -1433,15 +1433,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"create-svelte@npm:5.1.1":
-  version: 5.1.1
-  resolution: "create-svelte@npm:5.1.1"
+"create-svelte@npm:5.3.0":
+  version: 5.3.0
+  resolution: "create-svelte@npm:5.3.0"
   dependencies:
     "@clack/prompts": ^0.7.0
     kleur: ^4.1.5
   bin:
     create-svelte: bin.js
-  checksum: 7db65b65071c2a58ba3c64ca1719d4f0d04aab95ce93f4435ce6094fe74516ad416c00e4c66040515ec9b55c501bc68915ccdaa2305ff8a1d172ad10b13c34c6
+  checksum: 6ac7b9639995f1801df8c582d62f47d38b6cf6a8de726c55fb7cf0d6dcd3e218ebe19500a344572e62f865092c8f79b0964d293f89851de4005838b9129bf364
   languageName: node
   linkType: hard
 
