@@ -81,8 +81,6 @@ const main = async () => {
     })
     .parseSync();
 
-  const types = argv.types as 'checkjs' | 'typescript' | null;
-
   if (!argv.directory) {
     argv.directory = argv.name;
     argv.d = argv.name;
@@ -109,7 +107,7 @@ Will call create-svelte with the following arguments:
   await create(argv.directory, {
     name: argv.name,
     template: argv.template,
-    types: types,
+    types: argv.types as 'checkjs' | 'typescript' | null,
     prettier: argv.prettier,
     eslint: argv.eslint,
     playwright: argv.playwright,
