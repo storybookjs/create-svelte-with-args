@@ -1,3 +1,15 @@
+# v5.0.0 (Thu Nov 23 2023)
+
+#### 💥 Breaking Change
+
+- Add `--svelte5` option [#45](https://github.com/storybookjs/create-svelte-with-args/pull/45) ([@JReinhold](https://github.com/JReinhold))
+
+#### Authors: 1
+
+- Jeppe Reinhold ([@JReinhold](https://github.com/JReinhold))
+
+---
+
 # v4.1.1 (Tue Oct 10 2023)
 
 #### 🐛 Bug Fix
