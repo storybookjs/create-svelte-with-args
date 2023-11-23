@@ -37,17 +37,17 @@
   },
   "dependencies": {
     "create-svelte": "5.3.2",
-    "yargs": "^17.5.1"
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "@storybook/linter-config": "^3.1.2",
     "@tsconfig/node18": "^18.2.2",
-    "@types/node": "^18.7.23",
-    "@types/yargs": "^17.0.13",
-    "auto": "^10.37.6",
-    "prettier": "^2.7.1",
-    "tsup": "^6.2.3",
-    "typescript": "^4.8.4"
+    "@types/node": "^18.18.12",
+    "@types/yargs": "^17.0.32",
+    "auto": "^11.0.4",
+    "prettier": "^3.1.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2"
   },
   "prettier": "@storybook/linter-config/prettier.config.js",
   "auto": {
