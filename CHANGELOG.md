@@ -1,3 +1,19 @@
+# v5.0.1 (Thu Nov 23 2023)
+
+#### ⚠️ Pushed to `main`
+
+- update README.md with new flags ([@JReinhold](https://github.com/JReinhold))
+
+#### 🏠 Internal
+
+- Migrate to pnpm, Upgrade dependencies [#46](https://github.com/storybookjs/create-svelte-with-args/pull/46) ([@JReinhold](https://github.com/JReinhold))
+
+#### Authors: 1
+
+- Jeppe Reinhold ([@JReinhold](https://github.com/JReinhold))
+
+---
+
 # v5.0.0 (Thu Nov 23 2023)
 
 #### 💥 Breaking Change
