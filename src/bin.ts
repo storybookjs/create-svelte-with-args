@@ -39,7 +39,7 @@ const main = async () => {
       types: {
         alias: 'y',
         description: 'How types will be written',
-        choices: ['checkjs', 'typescript', null] as any,
+        choices: ['checkjs', 'typescript', 'null'] as const,
         demandOption: true,
         coerce: (value: string) => (value === 'null' ? null : value),
       },
@@ -81,6 +81,8 @@ const main = async () => {
     })
     .parseSync();
 
+  const types = argv.types as 'checkjs' | 'typescript' | null;
+
   if (!argv.directory) {
     argv.directory = argv.name;
     argv.d = argv.name;
@@ -107,7 +109,7 @@ Will call create-svelte with the following arguments:
   await create(argv.directory, {
     name: argv.name,
     template: argv.template,
-    types: argv.types,
+    types: types,
     prettier: argv.prettier,
     eslint: argv.eslint,
     playwright: argv.playwright,
