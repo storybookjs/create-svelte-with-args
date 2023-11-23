@@ -2,39 +2,36 @@
   "name": "create-svelte-with-args",
   "version": "4.1.1",
   "description": "A small CLI wrapper around the create-svelte package that enables you to replace the interactive prompts with CLI arguments.",
-  "bin": "dist/bin.js",
-  "repository": "git@github.com:storybookjs/create-svelte-with-args.git",
-  "author": "Jeppe Reinhold <jeppe@chromatic.com>",
   "keywords": [
     "svelte",
     "create-svelte",
     "cli"
   ],
+  "repository": "git@github.com:storybookjs/create-svelte-with-args.git",
   "license": "MIT",
+  "author": "Jeppe Reinhold <jeppe@chromatic.com>",
   "type": "module",
-  "scripts": {
-    "build": "tsup",
-    "prestart": "pnpm build",
-    "start": "node ./dist/bin.js",
-    "start:default": "pnpm start --name=default --template=default --types=checkjs --no-prettier --no-eslint --no-playwright --no-vitest --no-svelte5",
-    "start:mini": "pnpm start --name=mini --template=skeleton --types=null --no-prettier --no-eslint --no-playwright --no-vitest --no-svelte5",
-    "start:maxi": "pnpm start --name=maxi --template=default --types=typescript --prettier --eslint --playwright --vitest --no-svelte5",
-    "start:svelte5": "pnpm start --name=svelte5 --template=default --types=typescript --prettier --eslint --playwright --vitest --svelte5",
-    "start:dry": "pnpm start:default --dry",
-    "start:all": "pnpm start:default && pnpm start:mini && pnpm start:maxi && pnpm start:svelte5 && pnpm start:dry",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "type-check": "tsc --noEmit",
-    "check-all": "pnpm format:check && pnpm type-check && pnpm build && pnpm start:all",
-    "release": "auto shipit"
-  },
+  "bin": "dist/bin.js",
   "files": [
     "dist"
   ],
-  "packageManager": "pnpm@8.10.5",
-  "engines": {
-    "node": ">=18.0.0"
+  "scripts": {
+    "build": "tsup",
+    "check-all": "pnpm format:check && pnpm type-check && pnpm build && pnpm start:all",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "release": "auto shipit",
+    "prestart": "pnpm build",
+    "start": "node ./dist/bin.js",
+    "start:all": "pnpm start:default && pnpm start:mini && pnpm start:maxi && pnpm start:svelte5 && pnpm start:dry",
+    "start:default": "pnpm start --name=default --template=default --types=checkjs --no-prettier --no-eslint --no-playwright --no-vitest --no-svelte5",
+    "start:dry": "pnpm start:default --dry",
+    "start:maxi": "pnpm start --name=maxi --template=default --types=typescript --prettier --eslint --playwright --vitest --no-svelte5",
+    "start:mini": "pnpm start --name=mini --template=skeleton --types=null --no-prettier --no-eslint --no-playwright --no-vitest --no-svelte5",
+    "start:svelte5": "pnpm start --name=svelte5 --template=default --types=typescript --prettier --eslint --playwright --vitest --svelte5",
+    "type-check": "tsc --noEmit"
   },
+  "prettier": "@storybook/linter-config/prettier.config.js",
   "dependencies": {
     "create-svelte": "5.3.2",
     "yargs": "^17.7.2"
@@ -49,7 +46,10 @@
     "tsup": "^8.0.1",
     "typescript": "^5.3.2"
   },
-  "prettier": "@storybook/linter-config/prettier.config.js",
+  "packageManager": "pnpm@8.10.5",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "auto": {
     "plugins": [
       "npm",
