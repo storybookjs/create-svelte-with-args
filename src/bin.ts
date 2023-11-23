@@ -39,7 +39,7 @@ const main = async () => {
       types: {
         alias: 'y',
         description: 'How types will be written',
-        choices: ['checkjs', 'typescript', 'null'] as const,
+        choices: ['checkjs', 'typescript', null] as any,
         demandOption: true,
         coerce: (value: string) => (value === 'null' ? null : value),
       },

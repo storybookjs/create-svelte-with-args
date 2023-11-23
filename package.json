@@ -17,13 +17,12 @@
   ],
   "scripts": {
     "build": "tsup",
-    "check-all": "pnpm format:check && pnpm type-check && pnpm build && pnpm start:all",
+    "check-all": "npm-run-all --aggregate-output --print-label --parallel format:check type-check start:**",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "release": "auto shipit",
-    "prestart": "pnpm build",
     "start": "node ./dist/bin.js",
-    "start:all": "pnpm start:default && pnpm start:mini && pnpm start:maxi && pnpm start:svelte5 && pnpm start:dry",
+    "start-all": "npm-run-all --aggregate-output --print-label build --parallel start:**",
     "start:default": "pnpm start --name=default --template=default --types=checkjs --no-prettier --no-eslint --no-playwright --no-vitest --no-svelte5",
     "start:dry": "pnpm start:default --dry",
     "start:maxi": "pnpm start --name=maxi --template=default --types=typescript --prettier --eslint --playwright --vitest --no-svelte5",
@@ -42,6 +41,7 @@
     "@types/node": "^18.18.12",
     "@types/yargs": "^17.0.32",
     "auto": "^11.0.4",
+    "npm-run-all": "^4.1.5",
     "prettier": "^3.1.0",
     "tsup": "^8.0.1",
     "typescript": "^5.3.2"
