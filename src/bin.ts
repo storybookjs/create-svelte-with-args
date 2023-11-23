@@ -9,11 +9,11 @@ const main = async () => {
     .epilog('For more information, see https://github.com/storybookjs/create-svelte-with-args')
     .example([
       [
-        'npm create svelte-with-args@latest --name=my-new-app --template=default --types=checkjs --prettier --no-eslint --no-playwright --no-vitest',
+        'npm create svelte-with-args@latest --name=my-new-app --template=default --types=checkjs --prettier --no-eslint --no-playwright --no-vitest --no-svelte5',
         'Default app, checking JS types, with Prettier, and no ESLint, Playwright or Vitest',
       ],
       [
-        'npm create svelte-with-args@latest --name=my-new-app --directory=other-dir/my-app --template=default --types=typescript --no-prettier --no-eslint --no-playwright --no-vitest',
+        'npm create svelte-with-args@latest --name=my-new-app --directory=other-dir/my-app --template=default --types=typescript --no-prettier --no-eslint --no-playwright --no-vitest --no-svelte5',
         'Default app, installing in specified directory',
       ],
     ])
@@ -67,6 +67,12 @@ const main = async () => {
         description: 'Whether vitest should be included',
         demandOption: true,
       },
+      svelte5: {
+        alias: '5',
+        type: 'boolean',
+        description: 'If Svelte 5 beta should be used',
+        demandOption: true,
+      },
       dry: {
         type: 'boolean',
         description: 'Whether to run in dry run mode, not creating any files',
@@ -93,6 +99,7 @@ Will call create-svelte with the following arguments:
     eslint: ${argv.eslint},
     playwright: ${argv.playwright},
     vitest: ${argv.vitest},
+    svelte5: ${argv.svelte5},
   });`);
     return;
   }
@@ -105,6 +112,7 @@ Will call create-svelte with the following arguments:
     eslint: argv.eslint,
     playwright: argv.playwright,
     vitest: argv.vitest,
+    svelte5: argv.svelte5,
   });
 
   console.log(`Done. Succesfully created a new Svelte project in ./${argv.directory}`);
