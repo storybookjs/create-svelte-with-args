@@ -1,14 +1,19 @@
 name: 'Prepare Dependencies'
-description: 'Prepares all Node and Yarn dependencies'
+description: 'Prepares all Node and pnpm dependencies'
 runs:
   using: 'composite'
   steps:
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
+    - uses: pnpm/action-setup@v2
+      name: Install pnpm
       with:
-        node-version: '14'
-        cache: 'yarn'
+        version: 8
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        cache: 'pnpm'
 
     - name: Install dependencies
       shell: bash
-      run: yarn install --frozen-lockfile
+      run: pnpm install
+
