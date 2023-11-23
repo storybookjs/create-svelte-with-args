@@ -12,65 +12,52 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Prepare dependencies
         uses: ./.github/actions/prepare-deps
 
       - name: Check formatting with Prettier
-        run: yarn format:check
-
-  # lint:
-  #   name: Lint
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout repository
-  #       uses: actions/checkout@v3
-
-  #     - name: Prepare dependencies
-  #       uses: ./.github/actions/prepare-deps
-
-  #     - name: Lint
-  #       run: yarn lint
+        run: pnpm format:check
 
   type-check:
     name: Check Types
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Prepare dependencies
         uses: ./.github/actions/prepare-deps
 
       - name: Check TypeScript Types
-        run: yarn type-check
+        run: pnpm type-check
 
   build:
     name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Prepare dependencies
         uses: ./.github/actions/prepare-deps
 
       - name: Build
-        run: yarn build
+        run: pnpm build
 
   smoke-test:
     name: Smoke test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Prepare dependencies
         uses: ./.github/actions/prepare-deps
 
       - name: Build
-        run: yarn build
+        run: pnpm build
 
       - name: Start
-        run: yarn start:all
+        run: pnpm start-all

@@ -107,7 +107,7 @@ Will call create-svelte with the following arguments:
   await create(argv.directory, {
     name: argv.name,
     template: argv.template,
-    types: argv.types,
+    types: argv.types as 'checkjs' | 'typescript' | null,
     prettier: argv.prettier,
     eslint: argv.eslint,
     playwright: argv.playwright,
