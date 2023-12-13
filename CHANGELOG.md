@@ -1,3 +1,15 @@
+# v5.0.2 (Wed Dec 13 2023)
+
+#### 🐛 Bug Fix
+
+- Bump create-svelte from 5.3.2 to 5.3.3 [#47](https://github.com/storybookjs/create-svelte-with-args/pull/47) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v5.0.1 (Thu Nov 23 2023)
 
 #### ⚠️ Pushed to `main`
