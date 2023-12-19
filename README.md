@@ -34,7 +34,7 @@ The arguments match one to one with the upstream [programmatic `create-svelte` p
 | `--eslint`, `-e`     | Whether eslint should be included                                               | `boolean`                                         | `--eslint` or `--no-eslint`         |
 | `--playwright`, `-l` | Whether playwright should be included                                           | `boolean`                                         | `--playwright` or `--no-playwright` |
 | `--vitest`, `-v`     | Whether vitest should be included                                               | `boolean`                                         | `--vitest` or `--no-vitest`         |
-| `--svelte5`, `-5`    | If Svelte 5 beta should be used                                               | `boolean`                                         | `--svelte5` or `--no-svelte5`         |
+| `--svelte5`, `-5`    | If Svelte 5 beta should be used                                                 | `boolean`                                         | `--svelte5` or `--no-svelte5`       |
 
 ### Examples
 
