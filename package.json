@@ -32,7 +32,7 @@
   },
   "prettier": "@storybook/linter-config/prettier.config.js",
   "dependencies": {
-    "create-svelte": "6.0.9",
+    "create-svelte": "6.1.0",
     "yargs": "^17.7.2"
   },
   "devDependencies": {
