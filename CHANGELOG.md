@@ -1,3 +1,15 @@
+# v6.1.1 (Thu Apr 25 2024)
+
+#### 🐛 Bug Fix
+
+- Bump create-svelte from 6.1.1 to 6.1.2 [#58](https://github.com/storybookjs/create-svelte-with-args/pull/58) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v6.1.0 (Mon Apr 22 2024)
 
 #### 🚀 Enhancement
