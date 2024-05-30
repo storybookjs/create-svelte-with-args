@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   create-svelte:
-    specifier: 6.2.0
-    version: 6.2.0
+    specifier: 6.3.0
+    version: 6.3.0
   yargs:
     specifier: ^17.7.2
     version: 17.7.2
@@ -1615,8 +1615,8 @@ packages:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
     dev: true
 
-  /create-svelte@6.2.0:
-    resolution: {integrity: sha512-xe2ZJzld0vMUqboWsGG4Nghzmux9YMX3UV1iedN+MWffr9bHjqhX9exH10IdC1ra/jOp/EUaxPmNJxs56o8+4Q==}
+  /create-svelte@6.3.0:
+    resolution: {integrity: sha512-CLG1iMKGgSXyP6FmNVqgTSSTiCvE6unBHNZbJBtuhel+8T6Ev2+G4nzL1izE4yewbCPZZn7iSDDSMitA6AGC+A==}
     hasBin: true
     dependencies:
       '@clack/prompts': 0.7.0
@@ -4209,6 +4209,7 @@ packages:
 
   /rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
     dependencies:
       glob: 7.2.3
