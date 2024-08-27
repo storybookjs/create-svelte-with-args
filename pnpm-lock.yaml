@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   create-svelte:
-    specifier: 6.3.8
-    version: 6.3.8
+    specifier: 6.3.9
+    version: 6.3.9
   yargs:
     specifier: ^17.7.2
     version: 17.7.2
@@ -1617,8 +1617,8 @@ packages:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
     dev: true
 
-  /create-svelte@6.3.8:
-    resolution: {integrity: sha512-90c+tTYDTJBFbr0SE894VsGKcGZhyAyditr96rhNO3Om2aalmV6MDe0AQUBzAeB7DUaashnTIXTZRMo+Vc5S/g==}
+  /create-svelte@6.3.9:
+    resolution: {integrity: sha512-ggmwXJRQ+ZRgyW4++ctRgO0ixfoHjHtkmA5TUeosKGRtebdiw7cZlzrw+OViLGEClUZ3QCdO9HoJY2h01WfwvQ==}
     hasBin: true
     dependencies:
       '@clack/prompts': 0.7.0
